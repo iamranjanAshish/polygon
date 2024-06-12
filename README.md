@@ -1,14 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
 <h1>Polygon Tool</h1>
-<b>This tool is used to create any n-sided regular polygon</b> <br>
-Some of the samples are given below <br>
-<b>7-sided Regular Polygon</b>
-<img src="sampleII.png">
-<b>43-sided Regular Polygon</b>
-<img src='sample.png'>
-You might not see the polygon, <br> 
-Well, that's because a 43-sided polygon <b>seems</b> to overlap a circle when viewed from a macro scale, <br>
-But when you zoom in, the edges become obvious, as you may see on the right.<br>
-<b>So, going by this logic, as the the number of sides approaches infinity, the polygon 'becomes' the circle</b> <br>
-<b>which in turn implies, that a 'Circle is nothing but a polygon of Infinite Sides'.</b> Right? <br>
-<br>
-Now, if you're interested in a code walkthrough of this tool, along with logic and theory, you may <a href="https://youtu.be/zXMgxr5oLSQ?si=GTtdyH86DXd0ME8Q">click here.</a>
+
+<h2>Overview</h2>
+<p>This repository contains a Python tool for creating any n-sided regular polygon</p>
+
+<h2>Samples</h2>
+<p><strong>7-sided Regular Polygon</strong></p>
+<img src="sampleII.png" alt="7-sided Regular Polygon">
+
+<p><strong>43-sided Regular Polygon</strong></p>
+<img src="sample.png" alt="43-sided Regular Polygon">
+
+<p>As the number of sides increases, the polygon approximates a circle.</p>
+
+<h2>Usage</h2>
+<p>To create a polygon, run the <code>polygon.py</code> script:</p>
+<pre>
+<code>python polygon.py -sides &lt;number_of_sides&gt;</code>
+</pre>
+
+<h2>Resources</h2>
+<p>For a detailed code walkthrough and theoretical explanation, watch <a href="https://www.youtube.com/watch?v=zXMgxr5oLSQ">this video</a>.</p>
+
+</body>
+</html>

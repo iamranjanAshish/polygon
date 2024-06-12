@@ -1,12 +1,24 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
 
 plt.style.use('fivethirtyeight')
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-sides', type=int)
+args = parser.parse_args()
 
 alpha = np.linspace(0,2*np.pi,747) # Circular Angle
 
 def polygon(sides):
 
+    # Check
+    if sides < 3:
+        if sides < 0:
+            raise ValueError('Sides cannot be negative')
+        else:
+            raise ValueError('Number of sides must at least be 3')
+        
     # Parameters & Variables
     initial_x = -1.0
     x_values = []
@@ -46,7 +58,7 @@ def polygon(sides):
 
 #----------------------------------------------------------------------------------------------------
 
-x_cor, y_cor, sides = polygon(7) # polygon(Sides)
+x_cor, y_cor, sides = polygon(args.sides) # polygon(Sides)
 
 #----------------------------------------------------------------------------------------------------
 
